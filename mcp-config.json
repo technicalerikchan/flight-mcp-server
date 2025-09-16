@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "flight-server": {
+      "command": "node",
+      "args": ["src/index.js"],
+      "cwd": "/path/to/flight-mcp-server"
+    }
+  }
+}
