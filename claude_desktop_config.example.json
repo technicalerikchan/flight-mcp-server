@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "flight-server": {
-      "command": "node",
-      "args": ["/absolute/path/to/flight-mcp-server/src/index.js"]
-    }
-  }
-}

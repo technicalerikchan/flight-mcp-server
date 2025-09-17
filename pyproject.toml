@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flight-mcp-server"
+version = "1.0.0"
+description = "Tech share: MCP server for real-time flight queries using Amadeus API"
+authors = [{name = "Erik Chan"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["mcp", "flight", "amadeus", "claude", "tech-share"]
+dependencies = [
+    "mcp>=1.0.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "amadeus>=8.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.scripts]
+flight-mcp-server = "flight_mcp_server.server:main"
+
+[tool.setuptools]
+packages = ["flight_mcp_server"]
